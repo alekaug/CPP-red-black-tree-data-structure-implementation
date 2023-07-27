@@ -1,0 +1,183 @@
+\begin{theindex}
+
+  \item {\_Color}
+    \subitem {TreeNode}, \hyperpage{5}
+
+  \indexspace
+
+  \item {Add}
+    \subitem {funkcje.cpp}, \hyperpage{8}
+    \subitem {funkcje.h}, \hyperpage{17}
+  \item {Add\_Recovery}
+    \subitem {funkcje.cpp}, \hyperpage{8}
+    \subitem {funkcje.h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {black}
+    \subitem {struktury.h}, \hyperpage{25}
+
+  \indexspace
+
+  \item {ChangeToColor}
+    \subitem {funkcje.cpp}, \hyperpage{10}
+    \subitem {funkcje.h}, \hyperpage{18}
+  \item {Color}
+    \subitem {struktury.h}, \hyperpage{25}
+
+  \indexspace
+
+  \item {Deallocate}
+    \subitem {funkcje.cpp}, \hyperpage{10}
+    \subitem {funkcje.h}, \hyperpage{18}
+  \item {Delete}
+    \subitem {funkcje.cpp}, \hyperpage{10}
+    \subitem {funkcje.h}, \hyperpage{18}
+  \item {Delete\_Recovery}
+    \subitem {funkcje.cpp}, \hyperpage{11}
+    \subitem {funkcje.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {FileGraph}
+    \subitem {funkcje.cpp}, \hyperpage{11}
+    \subitem {funkcje.h}, \hyperpage{19}
+  \item {FilePrint}
+    \subitem {funkcje.cpp}, \hyperpage{11}
+    \subitem {funkcje.h}, \hyperpage{19}
+  \item {Find}
+    \subitem {funkcje.cpp}, \hyperpage{12}
+    \subitem {funkcje.h}, \hyperpage{20}
+  \item {funkcje.cpp}, \hyperpage{7}
+    \subitem {Add}, \hyperpage{8}
+    \subitem {Add\_Recovery}, \hyperpage{8}
+    \subitem {ChangeToColor}, \hyperpage{10}
+    \subitem {Deallocate}, \hyperpage{10}
+    \subitem {Delete}, \hyperpage{10}
+    \subitem {Delete\_Recovery}, \hyperpage{11}
+    \subitem {FileGraph}, \hyperpage{11}
+    \subitem {FilePrint}, \hyperpage{11}
+    \subitem {Find}, \hyperpage{12}
+    \subitem {GetParent}, \hyperpage{12}
+    \subitem {GetSibling}, \hyperpage{12}
+    \subitem {Graph}, \hyperpage{13}
+    \subitem {GraphToFile}, \hyperpage{13}
+    \subitem {lookForSign}, \hyperpage{13}
+    \subitem {Print}, \hyperpage{14}
+    \subitem {PrintToFile}, \hyperpage{14}
+    \subitem {ReadFromFile}, \hyperpage{14}
+    \subitem {rotate\_left}, \hyperpage{14}
+    \subitem {rotate\_right}, \hyperpage{15}
+    \subitem {StartCase}, \hyperpage{15}
+    \subitem {Successor}, \hyperpage{15}
+  \item {funkcje.h}, \hyperpage{16}
+    \subitem {Add}, \hyperpage{17}
+    \subitem {Add\_Recovery}, \hyperpage{17}
+    \subitem {ChangeToColor}, \hyperpage{18}
+    \subitem {Deallocate}, \hyperpage{18}
+    \subitem {Delete}, \hyperpage{18}
+    \subitem {Delete\_Recovery}, \hyperpage{19}
+    \subitem {FileGraph}, \hyperpage{19}
+    \subitem {FilePrint}, \hyperpage{19}
+    \subitem {Find}, \hyperpage{20}
+    \subitem {GetParent}, \hyperpage{20}
+    \subitem {GetSibling}, \hyperpage{20}
+    \subitem {Graph}, \hyperpage{21}
+    \subitem {GraphToFile}, \hyperpage{21}
+    \subitem {lookForSign}, \hyperpage{21}
+    \subitem {Print}, \hyperpage{22}
+    \subitem {PrintToFile}, \hyperpage{22}
+    \subitem {ReadFromFile}, \hyperpage{22}
+    \subitem {rotate\_left}, \hyperpage{23}
+    \subitem {rotate\_right}, \hyperpage{23}
+    \subitem {StartCase}, \hyperpage{23}
+    \subitem {Successor}, \hyperpage{24}
+
+  \indexspace
+
+  \item {GetParent}
+    \subitem {funkcje.cpp}, \hyperpage{12}
+    \subitem {funkcje.h}, \hyperpage{20}
+  \item {GetSibling}
+    \subitem {funkcje.cpp}, \hyperpage{12}
+    \subitem {funkcje.h}, \hyperpage{20}
+  \item {Graph}
+    \subitem {funkcje.cpp}, \hyperpage{13}
+    \subitem {funkcje.h}, \hyperpage{21}
+  \item {GraphToFile}
+    \subitem {funkcje.cpp}, \hyperpage{13}
+    \subitem {funkcje.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {left}
+    \subitem {TreeNode}, \hyperpage{6}
+  \item {lookForSign}
+    \subitem {funkcje.cpp}, \hyperpage{13}
+    \subitem {funkcje.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{24}
+  \item {main.cpp}, \hyperpage{24}
+    \subitem {main}, \hyperpage{24}
+
+  \indexspace
+
+  \item {parent}
+    \subitem {TreeNode}, \hyperpage{6}
+  \item {Print}
+    \subitem {funkcje.cpp}, \hyperpage{14}
+    \subitem {funkcje.h}, \hyperpage{22}
+  \item {PrintToFile}
+    \subitem {funkcje.cpp}, \hyperpage{14}
+    \subitem {funkcje.h}, \hyperpage{22}
+
+  \indexspace
+
+  \item {ReadFromFile}
+    \subitem {funkcje.cpp}, \hyperpage{14}
+    \subitem {funkcje.h}, \hyperpage{22}
+  \item {red}
+    \subitem {struktury.h}, \hyperpage{25}
+  \item {right}
+    \subitem {TreeNode}, \hyperpage{6}
+  \item {rotate\_left}
+    \subitem {funkcje.cpp}, \hyperpage{14}
+    \subitem {funkcje.h}, \hyperpage{23}
+  \item {rotate\_right}
+    \subitem {funkcje.cpp}, \hyperpage{15}
+    \subitem {funkcje.h}, \hyperpage{23}
+
+  \indexspace
+
+  \item {StartCase}
+    \subitem {funkcje.cpp}, \hyperpage{15}
+    \subitem {funkcje.h}, \hyperpage{23}
+  \item {struktury.h}, \hyperpage{25}
+    \subitem {black}, \hyperpage{25}
+    \subitem {Color}, \hyperpage{25}
+    \subitem {red}, \hyperpage{25}
+    \subitem {T}, \hyperpage{25}
+  \item {Successor}
+    \subitem {funkcje.cpp}, \hyperpage{15}
+    \subitem {funkcje.h}, \hyperpage{24}
+
+  \indexspace
+
+  \item {T}
+    \subitem {struktury.h}, \hyperpage{25}
+  \item {TreeNode}, \hyperpage{5}
+    \subitem {\_Color}, \hyperpage{5}
+    \subitem {left}, \hyperpage{6}
+    \subitem {parent}, \hyperpage{6}
+    \subitem {right}, \hyperpage{6}
+    \subitem {value}, \hyperpage{6}
+
+  \indexspace
+
+  \item {value}
+    \subitem {TreeNode}, \hyperpage{6}
+
+\end{theindex}

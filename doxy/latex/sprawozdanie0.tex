@@ -1,0 +1,165 @@
+%\documentclass[11pt,a4paper]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{polski}
+\usepackage{ragged2e}
+\usepackage[utf8]{inputenc} 
+\usepackage{graphicx}
+
+
+
+\title{\LARGE{Politechnika Śląska\\
+		Wydział Automatyki, Elektroniki i Informatyki\\}
+		\LARGE{\textbf{Podstawy Programowania Komputerów}\\}
+		\textbf{Czerwono–czarni}
+}
+\date{}
+
+\input{refman.tex}
+\begin{document}
+%\maketitle
+	\begin{center}
+
+	
+\rmfamily
+	\end{center}
+
+		autor Aleksander Augustyniak					\\
+		prowadzący mgr inż. Marek Kokot				\\
+		rok akademicki 2019/2020						\\
+		kierunek informatyka								\\
+		rodzaj studiów SSI									\\
+		semestr 1											\\
+		termin laboratorium piątek, 11:45 – 13:15		\\
+		sekcja 22												\\
+		termin oddania sprawozdania 2020-01-27		\\
+
+%blank page
+
+\section{Treść zadania}
+\begin{justify}
+Napisać program sortujący liczby rzeczywiste w pewnym zbiorze. Liczby podawane są w dość specyﬁczny sposób. Liczba może być dodana lub usunięta ze zbioru. Dodanie liczb jest realizowane przez komendę \texttt{add}, po której może wystąpić jedna lub więcej liczb (rozdzielonych białymi znakami). Komenda \texttt{remove} usuwa podaną po niej liczbę (lub liczby rozdzielone białymi znakami) ze zbioru. Komenda \texttt{print} powoduje wypisane liczb zawartych w zbiorze w porządku rosnącym. Po komendzie tej można podać nazwę pliku, wtedy wartości zostaną zapisane do tegoż pliku zamiast na standardowe wyjście. Komenda \texttt{graph} wypisuje drzewo w postaci graﬁcznej – głębsze poziomy drzewa są wypisywane z coraz większym wcięciem. Dodatkowo wartości w węzłach czarnych są wypisywane w nawiasach kwadratowych, np. \texttt{[13]}, w węzłach czerwonych – w nawiasach okrągłych, np. \texttt{(13)}. Podobnie jak w przypadku komendy print po komendzie graph można podać nazwę pliku do zapisu. Jeżeli komendy \texttt{print} i \texttt{graph} są użyte do zapisu do pliku, możliwe jest poprzedzenie nazwy pliku znakiem \texttt{+}. Wtedy plik nie zostanie nadpisany, ale nowa treść zostanie dopisana na końcu pliku, nie niszcząc dotychczasowej jego zawartości. Znak \texttt{\%} rozpoczyna komentarz do końca linii. Każda komenda jest zapisana w osobnej linii. Jeżeli zostanie podana niepoprawna komenda, program ignoruje ją. \par
+
+Przykładowy plik wejściowy:\\
+\texttt{
+\% przykladowy plik wejsciowy\\
+add -3.14 43.9 4\\
+graph \% wypisane z wcieciami i z oznaczeniami kolorow wezlow \\
+remove 4\\
+print \% wypisane na ekran\\
+add 3.45 -0.32\\
+print test-1.txt \% wypisanie do pliku\\
+\\
+add 490 32.3\\
+\\
+print \% na ekran \\
+print + test-1.txt \% dopisanie do pliku\\
+\\
+\textrm{Po komendzie \texttt{graph} zostanie wypisane drzewo:} \\
+\indent{(-3.14)}\\
+{[4]}\\
+\indent(42.9) \\
+\break
+}
+Program uruchamiany jest z linii poleceń z wykorzystaniem jednego przełącznika: \par
+\texttt {-i plik wejściowy} \\
+Do przechowywania liczb należy wykorzystać drzewa czerwono-czarne. Jest to warunek sine qua non.\\
+\end{justify}
+
+\section{Analiza zadania}
+\begin{justify}	
+Zadanie skupia się wokół problemu sortowania liczb rzeczywistych, zapisanych w pliku o podanej przez użytkownika nazwie.
+	
+\end{justify}
+
+\subsection{Struktury danych}
+\begin{justify}
+Program wykorzystuje drzewo czerwono–czarne do przechowywania wartości. Wartość jest przypisywana węzłowi o odpowiednim kolorze.
+
+Podstawowe zasady panujące w drzewie czerwono–czarnym: \cite{zasady_drzewa}
+\begin{enumerate}
+	\item{Każdy z węzłów jest czerwony lub czarny.}
+	\item{Korzeń drzewa jest czarny.}
+	\item{Wszystkie liście (NIL) są czarne.}
+	\item{Jeżeli węzeł jest czerwony, to oba jego potomki są czarne.}
+	\item{Każda ścieżka od wybranego węzła do liścia zawiera tę samą ilość czarnych węzłów.}	
+\end{enumerate}
+
+Powyższe zasady – opisujące wzajemny stosunek węzłów drzewa – pomagają zapanować nad wartościami przechowywanymi w węzłach oraz równoważyć jego wysokość. Pozwala to na skrócenie czasu poszukiwania, usuwania oraz dodawania wartości do struktury.
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=7cm]K.
+%\caption{Wizualizacja drzewa czerwono–czarnego}
+%\label{fig:obrazek K}
+%\end{figure}
+
+
+\end{justify}
+
+\subsection{Algorytmy}
+\begin{justify}
+
+Dodawanie wartości do drzewa czerwono–czarnego jest realizowane podobnie, jak w drzewie poszukiwań binarnych, lecz dodatkowo program wykonuje lokalne operacje na węzłach, takie jak: rotacje w lewo/prawo oraz zmiana kolorów węzłów, by przywrócić właściwości drzewa czerwono–czarnego.
+
+Gwarantowana złożoność obliczeniowa wynosi średnio, jak i w najgorszym przypadku $O(\log{\emph{n})}$, gdzie \emph{n} oznacza ilość wszystkich elementów znajdujących się w strukturze danych.
+
+By zrealizować operacje wypisywania i usuwania wartości węzłów, program rekurencyjnie przechodzi przez wszystkie węzły drzewa.
+
+\end{justify}
+
+\section{Specyfikacja zewnętrzna}
+\begin{justify}
+
+Aby uruchomić program, należy wprowadzić do linii poleceń, w odpowiedniej kolejności: \\
+\indent\texttt{nazwa\_programu -i plik\_wejściowy} \\
+Jeżeli program nie został prawidłowo uruchomiony, pojawi się stosowny komunikat z ewentualną instrukcją prawidłowego uruchomienia programu.
+
+
+
+
+
+\end{justify}
+
+\section{Specyfikacja wewnętrzna}
+\begin{justify}
+
+\end{justify}
+
+\subsection{Ogólna struktura programu}
+\begin{justify}
+Funkcja główna sprawdza, czy ilość wprowadzonych parametrów do linii poleceń jest większa od dwóch. Jeżeli nie – program kończy się – w przeciwnym wypadku zostaje uruchomiona funkcja \textbf{ReadFromFile}, przyjmująca jeden plik wejściowy. Funkcja ta zczytuje linia po linii każde polecenie i wywołuje odpowiednie podfunkcje: Add, Delete, Print, Graph, itd. – w zależności od znajdującej się w pliku wejściowym komendy.
+
+Program – po wczytaniu wszystkich komend – dealokuje całą zajętą przez drzewo pamięć i zamyka się.
+
+\end{justify}
+
+\subsection{Szczegółowy opis typów i funkcji}
+\begin{justify}
+Szczegółowy opis typów i funkcji znajduje się w załączniku.
+\end{justify}
+
+\section{Testowanie}
+\begin{justify}
+
+
+Program został przetestowany pod względem wycieków pamięci.
+\end{justify}
+
+\section{Wnioski}
+\begin{justify}
+
+\end{justify}
+
+\begin{thebibliography}{9}
+\bibitem{zasady_drzewa} 
+Cormen, Thomas; Leiserson, Charles; Rivest, Ronald; Stein, Clifford (2009). "13". Introduction to Algorithms (3rd ed.). MIT Press. pp. 308–309. ISBN 978-0-262-03384-8.
+
+\bibitem{}
+
+\end{thebibliography}
+
+
+
+
+\end{document}

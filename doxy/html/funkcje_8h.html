@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Czerwono-Czarni: Dokumentacja pliku funkcje.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Czerwono-Czarni
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">Samoorganizujące się binarne drzewo poszukiwań.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku funkcje.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="struktury_8h_source.html">struktury.h</a>&quot;</code><br />
+</div>
+<p><a href="funkcje_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a68335f419a3bfc6306be5e1542505aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a68335f419a3bfc6306be5e1542505aa9">Add</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;root, const <a class="el" href="struktury_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;value)</td></tr>
+<tr class="memdesc:a68335f419a3bfc6306be5e1542505aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodająca do drzewa węzeł o podanej wartości.  <a href="funkcje_8h.html#a68335f419a3bfc6306be5e1542505aa9">Więcej...</a><br /></td></tr>
+<tr class="separator:a68335f419a3bfc6306be5e1542505aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53b037f8e9e13ff5a6c1ac236af62dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ab53b037f8e9e13ff5a6c1ac236af62dc">Add_Recovery</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *z)</td></tr>
+<tr class="memdesc:ab53b037f8e9e13ff5a6c1ac236af62dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja przywracająca własności drzewa Czerwono-Czarnego po wykonaniu operacji dodawania nowego węzła do drzewa.  <a href="funkcje_8h.html#ab53b037f8e9e13ff5a6c1ac236af62dc">Więcej...</a><br /></td></tr>
+<tr class="separator:ab53b037f8e9e13ff5a6c1ac236af62dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935deee15d0c8784672c0111f45cc436"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a935deee15d0c8784672c0111f45cc436">rotate_left</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;node)</td></tr>
+<tr class="memdesc:a935deee15d0c8784672c0111f45cc436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lokalna zmiana struktury poddrzewa (w lewo).  <a href="funkcje_8h.html#a935deee15d0c8784672c0111f45cc436">Więcej...</a><br /></td></tr>
+<tr class="separator:a935deee15d0c8784672c0111f45cc436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73dacdad4ee6a5a9e1edbc2b12f84188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a73dacdad4ee6a5a9e1edbc2b12f84188">rotate_right</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;node)</td></tr>
+<tr class="memdesc:a73dacdad4ee6a5a9e1edbc2b12f84188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lokalna zmiana struktury poddrzewa (w lewo).  <a href="funkcje_8h.html#a73dacdad4ee6a5a9e1edbc2b12f84188">Więcej...</a><br /></td></tr>
+<tr class="separator:a73dacdad4ee6a5a9e1edbc2b12f84188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df4178dbb1fa1537884555e8ffeff6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a5df4178dbb1fa1537884555e8ffeff6e">Find</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, const <a class="el" href="struktury_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;value)</td></tr>
+<tr class="memdesc:a5df4178dbb1fa1537884555e8ffeff6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja szukająca w drzewie węzła o podanej wartości. Jeżeli węzeł zostanie odnaleziony funkcja zwraca wskaźnik na niego - w przeciwnym wypadku zwracany jest nullptr.  <a href="funkcje_8h.html#a5df4178dbb1fa1537884555e8ffeff6e">Więcej...</a><br /></td></tr>
+<tr class="separator:a5df4178dbb1fa1537884555e8ffeff6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69565a31c2993e51047385e5b48e5b9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a69565a31c2993e51047385e5b48e5b9f">StartCase</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node, bool &amp;isCase2)</td></tr>
+<tr class="memdesc:a69565a31c2993e51047385e5b48e5b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obejmująca przestawienie odpowiednich wskaźników i dealokowanie odpowiedniej pamięci - pamięci węzła y.  <a href="funkcje_8h.html#a69565a31c2993e51047385e5b48e5b9f">Więcej...</a><br /></td></tr>
+<tr class="separator:a69565a31c2993e51047385e5b48e5b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd41152c2e496af89da0adcb96b79b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a1dd41152c2e496af89da0adcb96b79b9">Successor</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node)</td></tr>
+<tr class="memdesc:a1dd41152c2e496af89da0adcb96b79b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odnajdująca następcę danego węzła. Jeżeli węzeł zostanie odnaleziony, funkcja zwraca wskaźnik na niego, w przeciwnym wypadku zwracany jest nullptr.  <a href="funkcje_8h.html#a1dd41152c2e496af89da0adcb96b79b9">Więcej...</a><br /></td></tr>
+<tr class="separator:a1dd41152c2e496af89da0adcb96b79b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23a826d7a4c8e0e860cb33d7836efef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#aa23a826d7a4c8e0e860cb33d7836efef">Delete</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;root, const <a class="el" href="struktury_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;value)</td></tr>
+<tr class="memdesc:aa23a826d7a4c8e0e860cb33d7836efef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odnajduje węzeł o podanej wartości, usuwa go i dealokuje zaalokowaną wcześniej pamięć.  <a href="funkcje_8h.html#aa23a826d7a4c8e0e860cb33d7836efef">Więcej...</a><br /></td></tr>
+<tr class="separator:aa23a826d7a4c8e0e860cb33d7836efef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d91e7901f2f61139a2bcb353afa914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a95d91e7901f2f61139a2bcb353afa914">GetParent</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node)</td></tr>
+<tr class="memdesc:a95d91e7901f2f61139a2bcb353afa914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja znajdująca i zwracająca rodzica podanego węzła.  <a href="funkcje_8h.html#a95d91e7901f2f61139a2bcb353afa914">Więcej...</a><br /></td></tr>
+<tr class="separator:a95d91e7901f2f61139a2bcb353afa914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77dae413e9a75fefc0ac6d4fbad993c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a77dae413e9a75fefc0ac6d4fbad993c7">GetSibling</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node)</td></tr>
+<tr class="memdesc:a77dae413e9a75fefc0ac6d4fbad993c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja znajdująca i zwracająca rodzeństwo podanego węzła.  <a href="funkcje_8h.html#a77dae413e9a75fefc0ac6d4fbad993c7">Więcej...</a><br /></td></tr>
+<tr class="separator:a77dae413e9a75fefc0ac6d4fbad993c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f59b8a5dd41e123a9d87a9ffc82c871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a1f59b8a5dd41e123a9d87a9ffc82c871">ChangeToColor</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node, <a class="el" href="struktury_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a> color)</td></tr>
+<tr class="memdesc:a1f59b8a5dd41e123a9d87a9ffc82c871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zmieniająca kolor węzła na podany.  <a href="funkcje_8h.html#a1f59b8a5dd41e123a9d87a9ffc82c871">Więcej...</a><br /></td></tr>
+<tr class="separator:a1f59b8a5dd41e123a9d87a9ffc82c871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f95d5fd52c294f192d05a547a3f8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a54f95d5fd52c294f192d05a547a3f8ed">Deallocate</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;root)</td></tr>
+<tr class="memdesc:a54f95d5fd52c294f192d05a547a3f8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja całkowicie usuwa drzewo i dealokuje zajętą przezeń pamięć.  <a href="funkcje_8h.html#a54f95d5fd52c294f192d05a547a3f8ed">Więcej...</a><br /></td></tr>
+<tr class="separator:a54f95d5fd52c294f192d05a547a3f8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6334e6b5ecd24a060fa46fe6be9cbb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a6334e6b5ecd24a060fa46fe6be9cbb0f">Delete_Recovery</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;node)</td></tr>
+<tr class="memdesc:a6334e6b5ecd24a060fa46fe6be9cbb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja przywracająca własności drzewa czerwono-czarnego z widoku usuniętego wcześniej węzła-następcy węzła przeznaczonego do usunięcia.  <a href="funkcje_8h.html#a6334e6b5ecd24a060fa46fe6be9cbb0f">Więcej...</a><br /></td></tr>
+<tr class="separator:a6334e6b5ecd24a060fa46fe6be9cbb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ac9a46fd9ef8ae8ce7826705ac0e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a99ac9a46fd9ef8ae8ce7826705ac0e1b">Print</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:a99ac9a46fd9ef8ae8ce7826705ac0e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja przyjmująca jako parametr korzeń drzewa. Wypisuje wartości wszystkich węzłów drzewa w kolejności in-order.  <a href="funkcje_8h.html#a99ac9a46fd9ef8ae8ce7826705ac0e1b">Więcej...</a><br /></td></tr>
+<tr class="separator:a99ac9a46fd9ef8ae8ce7826705ac0e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1c6ce27fcc784544dc6fb94b76333e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a3a1c6ce27fcc784544dc6fb94b76333e">Graph</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, int indent=0)</td></tr>
+<tr class="memdesc:a3a1c6ce27fcc784544dc6fb94b76333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypisuje wartości wszystkich węzłów drzewa w kolejności rosnącej z uwzględnieniem wysokości drzewa i kolorów poszczególnych węzłów.  <a href="funkcje_8h.html#a3a1c6ce27fcc784544dc6fb94b76333e">Więcej...</a><br /></td></tr>
+<tr class="separator:a3a1c6ce27fcc784544dc6fb94b76333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02b17d7a71b191b2cf05fa3108dec33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#aa02b17d7a71b191b2cf05fa3108dec33">ReadFromFile</a> (const std::string &amp;file_name)</td></tr>
+<tr class="memdesc:aa02b17d7a71b191b2cf05fa3108dec33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odczytująca plik "linia po linii" i wykonująca odpowiednie polecenia.  <a href="funkcje_8h.html#aa02b17d7a71b191b2cf05fa3108dec33">Więcej...</a><br /></td></tr>
+<tr class="separator:aa02b17d7a71b191b2cf05fa3108dec33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c3fe58316f14abfece5c87eee40769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a64c3fe58316f14abfece5c87eee40769">FilePrint</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;root, const std::string &amp;file_name, const bool &amp;toOverwrite)</td></tr>
+<tr class="memdesc:a64c3fe58316f14abfece5c87eee40769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypisująca do pliku o podanej nazwie wartości wszystich węzłów drzewa w porządku rosnącym.  <a href="funkcje_8h.html#a64c3fe58316f14abfece5c87eee40769">Więcej...</a><br /></td></tr>
+<tr class="separator:a64c3fe58316f14abfece5c87eee40769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8f930f7a7a68615bbd8926172af1f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a4a8f930f7a7a68615bbd8926172af1f0">FileGraph</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;root, const std::string &amp;file_name, const bool &amp;toOverwrite)</td></tr>
+<tr class="memdesc:a4a8f930f7a7a68615bbd8926172af1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypisująca do pliku o podanej nazwie wizualizację wszystkich węzłów znajdujących się w drzewie, z uwzględnieniem ich koloru, np: [33] - węzeł czarny o wartości 33, (13) - węzeł czerwony o wartości 13.  <a href="funkcje_8h.html#a4a8f930f7a7a68615bbd8926172af1f0">Więcej...</a><br /></td></tr>
+<tr class="separator:a4a8f930f7a7a68615bbd8926172af1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93c9772c981762cd502262e917743c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ab93c9772c981762cd502262e917743c7">PrintToFile</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, std::ofstream &amp;file)</td></tr>
+<tr class="memdesc:ab93c9772c981762cd502262e917743c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główny algorytm służący wypisywaniu do pliku wszystkich wartości węzłów drzewa w kolejności rosnącej.  <a href="funkcje_8h.html#ab93c9772c981762cd502262e917743c7">Więcej...</a><br /></td></tr>
+<tr class="separator:ab93c9772c981762cd502262e917743c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46361afeb9863c199d30aff5b527811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ae46361afeb9863c199d30aff5b527811">GraphToFile</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, std::ofstream &amp;file, int indent=0)</td></tr>
+<tr class="memdesc:ae46361afeb9863c199d30aff5b527811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główny algorytm służący wypisywaniu do pliku wizualizacji pozycji wszystkich węzłów w drzewie czerwono-czarnym.  <a href="funkcje_8h.html#ae46361afeb9863c199d30aff5b527811">Więcej...</a><br /></td></tr>
+<tr class="separator:ae46361afeb9863c199d30aff5b527811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544190e91a8c78ab99b91aab8ec88de8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a544190e91a8c78ab99b91aab8ec88de8">lookForSign</a> (const std::string &amp;line, char searched)</td></tr>
+<tr class="memdesc:a544190e91a8c78ab99b91aab8ec88de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odnajdująca pozycję podanego znaku w łańcuchu znakowym. Używana jest w funkcji ReadFromFile, by usunąć z pliku wszystkie komentarze, puste linie ora linie, które zawierają niepoprawnie wprowadzone komendy.  <a href="funkcje_8h.html#a544190e91a8c78ab99b91aab8ec88de8">Więcej...</a><br /></td></tr>
+<tr class="separator:a544190e91a8c78ab99b91aab8ec88de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a68335f419a3bfc6306be5e1542505aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68335f419a3bfc6306be5e1542505aa9">&#9670;&nbsp;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struktury_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja dodająca do drzewa węzeł o podanej wartości. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">T</td><td>wartość. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab53b037f8e9e13ff5a6c1ac236af62dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53b037f8e9e13ff5a6c1ac236af62dc">&#9670;&nbsp;</a></span>Add_Recovery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Add_Recovery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>z</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja przywracająca własności drzewa Czerwono-Czarnego po wykonaniu operacji dodawania nowego węzła do drzewa. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">z</td><td>wskaźnik na węzeł drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f59b8a5dd41e123a9d87a9ffc82c871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f59b8a5dd41e123a9d87a9ffc82c871">&#9670;&nbsp;</a></span>ChangeToColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChangeToColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struktury_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zmieniająca kolor węzła na podany. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>wskaźnik na węzeł drzewa, którego kolor będzie zmieniony. </td></tr>
+    <tr><td class="paramname">color</td><td>kolor, na jaki węzeł powinien być zmieniony (o ile węzeł istnieje). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54f95d5fd52c294f192d05a547a3f8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f95d5fd52c294f192d05a547a3f8ed">&#9670;&nbsp;</a></span>Deallocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja całkowicie usuwa drzewo i dealokuje zajętą przezeń pamięć. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa23a826d7a4c8e0e860cb33d7836efef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23a826d7a4c8e0e860cb33d7836efef">&#9670;&nbsp;</a></span>Delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struktury_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odnajduje węzeł o podanej wartości, usuwa go i dealokuje zaalokowaną wcześniej pamięć. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">value</td><td>wartość węzła do usunięcia. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6334e6b5ecd24a060fa46fe6be9cbb0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6334e6b5ecd24a060fa46fe6be9cbb0f">&#9670;&nbsp;</a></span>Delete_Recovery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Delete_Recovery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja przywracająca własności drzewa czerwono-czarnego z widoku usuniętego wcześniej węzła-następcy węzła przeznaczonego do usunięcia. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>węzeł drzewa czerwono-czarnego. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a8f930f7a7a68615bbd8926172af1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8f930f7a7a68615bbd8926172af1f0">&#9670;&nbsp;</a></span>FileGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>toOverwrite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypisująca do pliku o podanej nazwie wizualizację wszystkich węzłów znajdujących się w drzewie, z uwzględnieniem ich koloru, np: [33] - węzeł czarny o wartości 33, (13) - węzeł czerwony o wartości 13. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">file_name</td><td>pełna nazwa pliku, do którego mają być wypisywane wszystkie wartości węzłów drzewa. </td></tr>
+    <tr><td class="paramname">toOverwrite</td><td>parametr określający czy wartości w pliku mają być nadpisane. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64c3fe58316f14abfece5c87eee40769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c3fe58316f14abfece5c87eee40769">&#9670;&nbsp;</a></span>FilePrint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FilePrint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>toOverwrite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypisująca do pliku o podanej nazwie wartości wszystich węzłów drzewa w porządku rosnącym. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">file_name</td><td>pełna nazwa pliku, do którego mają być wypisywane wszystkie wartości węzłów drzewa. </td></tr>
+    <tr><td class="paramname">toOverwrite</td><td>parametr określający czy wartości w pliku mają być nadpisane. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5df4178dbb1fa1537884555e8ffeff6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df4178dbb1fa1537884555e8ffeff6e">&#9670;&nbsp;</a></span>Find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a>* Find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struktury_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja szukająca w drzewie węzła o podanej wartości. Jeżeli węzeł zostanie odnaleziony funkcja zwraca wskaźnik na niego - w przeciwnym wypadku zwracany jest nullptr. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">value</td><td>wartosc. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>węzeł o podanej wartości lub nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a95d91e7901f2f61139a2bcb353afa914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d91e7901f2f61139a2bcb353afa914">&#9670;&nbsp;</a></span>GetParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a>* GetParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja znajdująca i zwracająca rodzica podanego węzła. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>wskaźnik na odpowiedni węzeł drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>rodzic podanego węzła lub nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a77dae413e9a75fefc0ac6d4fbad993c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77dae413e9a75fefc0ac6d4fbad993c7">&#9670;&nbsp;</a></span>GetSibling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a>* GetSibling </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja znajdująca i zwracająca rodzeństwo podanego węzła. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>wskaźnik na odpowiedni węzeł drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>rodzeństwo węzła lub nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a3a1c6ce27fcc784544dc6fb94b76333e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1c6ce27fcc784544dc6fb94b76333e">&#9670;&nbsp;</a></span>Graph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypisuje wartości wszystkich węzłów drzewa w kolejności rosnącej z uwzględnieniem wysokości drzewa i kolorów poszczególnych węzłów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">indent</td><td>wcięcie - wyrażane w ilości znaków białych. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae46361afeb9863c199d30aff5b527811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae46361afeb9863c199d30aff5b527811">&#9670;&nbsp;</a></span>GraphToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GraphToFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Główny algorytm służący wypisywaniu do pliku wizualizacji pozycji wszystkich węzłów w drzewie czerwono-czarnym. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">file</td><td>strumień plikowy. </td></tr>
+    <tr><td class="paramname">indent</td><td>wcięcie - wyrażane w ilości znaków białych. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a544190e91a8c78ab99b91aab8ec88de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544190e91a8c78ab99b91aab8ec88de8">&#9670;&nbsp;</a></span>lookForSign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t lookForSign </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>searched</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odnajdująca pozycję podanego znaku w łańcuchu znakowym. Używana jest w funkcji ReadFromFile, by usunąć z pliku wszystkie komentarze, puste linie ora linie, które zawierają niepoprawnie wprowadzone komendy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>łańcuch znakowy. </td></tr>
+    <tr><td class="paramname">searched</td><td>znak, którego pozycja ma zostać odnaleziona. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>pozycję odnalezionego znaku (jeżeli nie wystąpił - zwracana jest długość podanego łańcucha znakowego). </dd></dl>
+
+</div>
+</div>
+<a id="a99ac9a46fd9ef8ae8ce7826705ac0e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ac9a46fd9ef8ae8ce7826705ac0e1b">&#9670;&nbsp;</a></span>Print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja przyjmująca jako parametr korzeń drzewa. Wypisuje wartości wszystkich węzłów drzewa w kolejności in-order. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab93c9772c981762cd502262e917743c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93c9772c981762cd502262e917743c7">&#9670;&nbsp;</a></span>PrintToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PrintToFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Główny algorytm służący wypisywaniu do pliku wszystkich wartości węzłów drzewa w kolejności rosnącej. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>wskaźnik na korzeń drzewa. </td></tr>
+    <tr><td class="paramname">file</td><td>strumień plikowy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa02b17d7a71b191b2cf05fa3108dec33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02b17d7a71b191b2cf05fa3108dec33">&#9670;&nbsp;</a></span>ReadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odczytująca plik "linia po linii" i wykonująca odpowiednie polecenia. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>pełna nazwa pliku. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a935deee15d0c8784672c0111f45cc436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935deee15d0c8784672c0111f45cc436">&#9670;&nbsp;</a></span>rotate_left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rotate_left </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lokalna zmiana struktury poddrzewa (w lewo). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>wskaźnik na węzeł drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>prawe poddrzewo węzła musi istnieć! </dd></dl>
+
+</div>
+</div>
+<a id="a73dacdad4ee6a5a9e1edbc2b12f84188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73dacdad4ee6a5a9e1edbc2b12f84188">&#9670;&nbsp;</a></span>rotate_right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rotate_right </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lokalna zmiana struktury poddrzewa (w lewo). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>wskaźnik na węzeł drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>lewe poddrzewo węzła musi istnieć! </dd></dl>
+
+</div>
+</div>
+<a id="a69565a31c2993e51047385e5b48e5b9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69565a31c2993e51047385e5b48e5b9f">&#9670;&nbsp;</a></span>StartCase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StartCase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>isCase2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja obejmująca przestawienie odpowiednich wskaźników i dealokowanie odpowiedniej pamięci - pamięci węzła y. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>wskaźnik na węzeł drzewa. </td></tr>
+    <tr><td class="paramname">isCase2</td><td>sprawdzenie, czy istnieje potrzeba dalszego przywracania własności drzewa czerwono-czarnego. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1dd41152c2e496af89da0adcb96b79b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd41152c2e496af89da0adcb96b79b9">&#9670;&nbsp;</a></span>Successor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a>* Successor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odnajdująca następcę danego węzła. Jeżeli węzeł zostanie odnaleziony, funkcja zwraca wskaźnik na niego, w przeciwnym wypadku zwracany jest nullptr. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>wskaźnik na węzeł drzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>następca węzła. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

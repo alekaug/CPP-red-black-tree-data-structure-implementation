@@ -1,0 +1,386 @@
+\hypertarget{funkcje_8cpp}{}\doxysection{Dokumentacja pliku C\+:/\+Users/narxyz/source/repos/14a0a046-\/gr22-\/repo/projekt/\+Czerwono-\/\+Czarni/funkcje.cpp}
+\label{funkcje_8cpp}\index{C:/Users/narxyz/source/repos/14a0a046-\/gr22-\/repo/projekt/Czerwono-\/Czarni/funkcje.cpp@{C:/Users/narxyz/source/repos/14a0a046-\/gr22-\/repo/projekt/Czerwono-\/Czarni/funkcje.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}struktury.\+h\char`\"{}}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8cpp_a95d91e7901f2f61139a2bcb353afa914}{Get\+Parent}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Funkcja znajduj¹ca i zwracaj¹ca rodzica podanego wêz³a. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8cpp_a77dae413e9a75fefc0ac6d4fbad993c7}{Get\+Sibling}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Funkcja znajduj¹ca i zwracaj¹ca rodzeñstwo podanego wêz³a. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a1f59b8a5dd41e123a9d87a9ffc82c871}{Change\+To\+Color}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node, Color color)
+\begin{DoxyCompactList}\small\item\em Funkcja zmieniaj¹ca kolor wêz³a na podany. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a935deee15d0c8784672c0111f45cc436}{rotate\+\_\+left}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&node)
+\begin{DoxyCompactList}\small\item\em Lokalna zmiana struktury poddrzewa (w lewo). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a73dacdad4ee6a5a9e1edbc2b12f84188}{rotate\+\_\+right}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&node)
+\begin{DoxyCompactList}\small\item\em Lokalna zmiana struktury poddrzewa (w lewo). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_ab53b037f8e9e13ff5a6c1ac236af62dc}{Add\+\_\+\+Recovery}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$z)
+\begin{DoxyCompactList}\small\item\em Funkcja przywracaj¹ca w³asnoœci drzewa Czerwono-\/\+Czarnego po wykonaniu operacji dodawania nowego wêz³a do drzewa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a68335f419a3bfc6306be5e1542505aa9}{Add}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const T \&value)
+\begin{DoxyCompactList}\small\item\em Funkcja dodaj¹ca do drzewa wêze³ o podanej wartoœci. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8cpp_a5df4178dbb1fa1537884555e8ffeff6e}{Find}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, const T \&value)
+\begin{DoxyCompactList}\small\item\em Funkcja szukaj¹ca w drzewie wêz³a o podanej wartoœci. Je¿eli wêze³ zostanie odnaleziony funkcja zwraca wskaŸnik na niego -\/ w przeciwnym wypadku zwracany jest nullptr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8cpp_a1dd41152c2e496af89da0adcb96b79b9}{Successor}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajduj¹ca nastêpcê danego wêz³a. Je¿eli wêze³ zostanie odnaleziony, funkcja zwraca wskaŸnik na niego, w przeciwnym wypadku zwracany jest nullptr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a69565a31c2993e51047385e5b48e5b9f}{Start\+Case}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node, bool \&is\+Case2)
+\begin{DoxyCompactList}\small\item\em Funkcja obejmuj¹ca przestawienie odpowiednich wskaŸników i dealokowanie odpowiedniej pamiêci -\/ pamiêci wêz³a y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a6334e6b5ecd24a060fa46fe6be9cbb0f}{Delete\+\_\+\+Recovery}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&node)
+\begin{DoxyCompactList}\small\item\em Funkcja przywracaj¹ca w³asnoœci drzewa czerwono-\/czarnego z widoku usuniêtego wczeœniej wêz³a-\/nastêpcy wêz³a przeznaczonego do usuniêcia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_aa23a826d7a4c8e0e860cb33d7836efef}{Delete}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const T \&value)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajduje wêze³ o podanej wartoœci, usuwa go i dealokuje zaalokowan¹ wczeœniej pamiêæ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a99ac9a46fd9ef8ae8ce7826705ac0e1b}{Print}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Funkcja przyjmuj¹ca jako parametr korzeñ drzewa. Wypisuje wartoœci wszystkich wêz³ów drzewa w kolejnoœci in-\/order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a3a1c6ce27fcc784544dc6fb94b76333e}{Graph}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, int indent=0)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuje wartoœci wszystkich wêz³ów drzewa w kolejnoœci rosn¹cej z uwzglêdnieniem wysokoœci drzewa i kolorów poszczególnych wêz³ów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a54f95d5fd52c294f192d05a547a3f8ed}{Deallocate}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root)
+\begin{DoxyCompactList}\small\item\em Funkcja ca³kowicie usuwa drzewo i dealokuje zajêt¹ przezeñ pamiêæ. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{funkcje_8cpp_a8e20b052b3ad582c80b538f2f75430de}\label{funkcje_8cpp_a8e20b052b3ad582c80b538f2f75430de}} 
+void {\bfseries Print\+To\+File} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, ofstream \&file)
+\item 
+\mbox{\Hypertarget{funkcje_8cpp_a5c7651e16f5a76d03a8a886af650b363}\label{funkcje_8cpp_a5c7651e16f5a76d03a8a886af650b363}} 
+void {\bfseries Graph\+To\+File} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, ofstream \&file, int indent=0)
+\item 
+size\+\_\+t \mbox{\hyperlink{funkcje_8cpp_a544190e91a8c78ab99b91aab8ec88de8}{look\+For\+Sign}} (const std\+::string \&line, char searched)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajduj¹ca pozycjê podanego znaku w ³añcuchu znakowym. U¿ywana jest w funkcji Read\+From\+File, by usun¹æ z pliku wszystkie komentarze, puste linie ora linie, które zawieraj¹ niepoprawnie wprowadzone komendy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a64c3fe58316f14abfece5c87eee40769}{File\+Print}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const std\+::string \&file\+\_\+name, const bool \&to\+Overwrite)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuj¹ca do pliku o podanej nazwie wartoœci wszystich wêz³ów drzewa w porz¹dku rosn¹cym. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a4a8f930f7a7a68615bbd8926172af1f0}{File\+Graph}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const std\+::string \&file\+\_\+name, const bool \&to\+Overwrite)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuj¹ca do pliku o podanej nazwie wizualizacjê wszystkich wêz³ów znajduj¹cych siê w drzewie, z uwzglêdnieniem ich koloru, np\+: \mbox{[}33\mbox{]} -\/ wêze³ czarny o wartoœci 33, (13) -\/ wêze³ czerwony o wartoœci 13. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_aa02b17d7a71b191b2cf05fa3108dec33}{Read\+From\+File}} (const std\+::string \&file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Funkcja odczytuj¹ca plik \char`\"{}linia po linii\char`\"{} i wykonuj¹ca odpowiednie polecenia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{funkcje_8cpp_a68335f419a3bfc6306be5e1542505aa9}\label{funkcje_8cpp_a68335f419a3bfc6306be5e1542505aa9}} 
+\index{funkcje.cpp@{funkcje.cpp}!Add@{Add}}
+\index{Add@{Add}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const T \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodaj¹ca do drzewa wêze³ o podanej wartoœci. ~\newline
+ 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+{\em T} & wartoœæ. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_ab53b037f8e9e13ff5a6c1ac236af62dc}\label{funkcje_8cpp_ab53b037f8e9e13ff5a6c1ac236af62dc}} 
+\index{funkcje.cpp@{funkcje.cpp}!Add\_Recovery@{Add\_Recovery}}
+\index{Add\_Recovery@{Add\_Recovery}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Add\_Recovery()}{Add\_Recovery()}}
+{\footnotesize\ttfamily void Add\+\_\+\+Recovery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{z }\end{DoxyParamCaption})}
+
+
+
+Funkcja przywracaj¹ca w³asnoœci drzewa Czerwono-\/\+Czarnego po wykonaniu operacji dodawania nowego wêz³a do drzewa. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em z} & wskaŸnik na wêze³ drzewa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a1f59b8a5dd41e123a9d87a9ffc82c871}\label{funkcje_8cpp_a1f59b8a5dd41e123a9d87a9ffc82c871}} 
+\index{funkcje.cpp@{funkcje.cpp}!ChangeToColor@{ChangeToColor}}
+\index{ChangeToColor@{ChangeToColor}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{ChangeToColor()}{ChangeToColor()}}
+{\footnotesize\ttfamily void Change\+To\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Funkcja zmieniaj¹ca kolor wêz³a na podany. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaŸnik na wêze³ drzewa, którego kolor bêdzie zmieniony. \\
+\hline
+{\em color} & kolor, na jaki wêze³ powinien byæ zmieniony (o ile wêze³ istnieje). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a54f95d5fd52c294f192d05a547a3f8ed}\label{funkcje_8cpp_a54f95d5fd52c294f192d05a547a3f8ed}} 
+\index{funkcje.cpp@{funkcje.cpp}!Deallocate@{Deallocate}}
+\index{Deallocate@{Deallocate}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Deallocate()}{Deallocate()}}
+{\footnotesize\ttfamily void Deallocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root }\end{DoxyParamCaption})}
+
+
+
+Funkcja ca³kowicie usuwa drzewo i dealokuje zajêt¹ przezeñ pamiêæ. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_aa23a826d7a4c8e0e860cb33d7836efef}\label{funkcje_8cpp_aa23a826d7a4c8e0e860cb33d7836efef}} 
+\index{funkcje.cpp@{funkcje.cpp}!Delete@{Delete}}
+\index{Delete@{Delete}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const T \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajduje wêze³ o podanej wartoœci, usuwa go i dealokuje zaalokowan¹ wczeœniej pamiêæ. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+{\em value} & wartoœæ wêz³a do usuniêcia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a6334e6b5ecd24a060fa46fe6be9cbb0f}\label{funkcje_8cpp_a6334e6b5ecd24a060fa46fe6be9cbb0f}} 
+\index{funkcje.cpp@{funkcje.cpp}!Delete\_Recovery@{Delete\_Recovery}}
+\index{Delete\_Recovery@{Delete\_Recovery}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Delete\_Recovery()}{Delete\_Recovery()}}
+{\footnotesize\ttfamily void Delete\+\_\+\+Recovery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja przywracaj¹ca w³asnoœci drzewa czerwono-\/czarnego z widoku usuniêtego wczeœniej wêz³a-\/nastêpcy wêz³a przeznaczonego do usuniêcia. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wêze³ drzewa czerwono-\/czarnego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a4a8f930f7a7a68615bbd8926172af1f0}\label{funkcje_8cpp_a4a8f930f7a7a68615bbd8926172af1f0}} 
+\index{funkcje.cpp@{funkcje.cpp}!FileGraph@{FileGraph}}
+\index{FileGraph@{FileGraph}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{FileGraph()}{FileGraph()}}
+{\footnotesize\ttfamily void File\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const std\+::string \&}]{file\+\_\+name,  }\item[{const bool \&}]{to\+Overwrite }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisuj¹ca do pliku o podanej nazwie wizualizacjê wszystkich wêz³ów znajduj¹cych siê w drzewie, z uwzglêdnieniem ich koloru, np\+: \mbox{[}33\mbox{]} -\/ wêze³ czarny o wartoœci 33, (13) -\/ wêze³ czerwony o wartoœci 13. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+{\em file\+\_\+name} & pe³na nazwa pliku, do którego maj¹ byæ wypisywane wszystkie wartoœci wêz³ów drzewa. \\
+\hline
+{\em to\+Overwrite} & parametr okreœlaj¹cy czy wartoœci w pliku maj¹ byæ nadpisane. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a64c3fe58316f14abfece5c87eee40769}\label{funkcje_8cpp_a64c3fe58316f14abfece5c87eee40769}} 
+\index{funkcje.cpp@{funkcje.cpp}!FilePrint@{FilePrint}}
+\index{FilePrint@{FilePrint}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{FilePrint()}{FilePrint()}}
+{\footnotesize\ttfamily void File\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const std\+::string \&}]{file\+\_\+name,  }\item[{const bool \&}]{to\+Overwrite }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisuj¹ca do pliku o podanej nazwie wartoœci wszystich wêz³ów drzewa w porz¹dku rosn¹cym. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+{\em file\+\_\+name} & pe³na nazwa pliku, do którego maj¹ byæ wypisywane wszystkie wartoœci wêz³ów drzewa. \\
+\hline
+{\em to\+Overwrite} & parametr okreœlaj¹cy czy wartoœci w pliku maj¹ byæ nadpisane. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a5df4178dbb1fa1537884555e8ffeff6e}\label{funkcje_8cpp_a5df4178dbb1fa1537884555e8ffeff6e}} 
+\index{funkcje.cpp@{funkcje.cpp}!Find@{Find}}
+\index{Find@{Find}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root,  }\item[{const T \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcja szukaj¹ca w drzewie wêz³a o podanej wartoœci. Je¿eli wêze³ zostanie odnaleziony funkcja zwraca wskaŸnik na niego -\/ w przeciwnym wypadku zwracany jest nullptr. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+{\em value} & wartosc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wêze³ o podanej wartoœci lub nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a95d91e7901f2f61139a2bcb353afa914}\label{funkcje_8cpp_a95d91e7901f2f61139a2bcb353afa914}} 
+\index{funkcje.cpp@{funkcje.cpp}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Get\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja znajduj¹ca i zwracaj¹ca rodzica podanego wêz³a. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaŸnik na odpowiedni wêze³ drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+rodzic podanego wêz³a lub nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a77dae413e9a75fefc0ac6d4fbad993c7}\label{funkcje_8cpp_a77dae413e9a75fefc0ac6d4fbad993c7}} 
+\index{funkcje.cpp@{funkcje.cpp}!GetSibling@{GetSibling}}
+\index{GetSibling@{GetSibling}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{GetSibling()}{GetSibling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Get\+Sibling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja znajduj¹ca i zwracaj¹ca rodzeñstwo podanego wêz³a. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaŸnik na odpowiedni wêze³ drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+rodzeñstwo wêz³a lub nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a3a1c6ce27fcc784544dc6fb94b76333e}\label{funkcje_8cpp_a3a1c6ce27fcc784544dc6fb94b76333e}} 
+\index{funkcje.cpp@{funkcje.cpp}!Graph@{Graph}}
+\index{Graph@{Graph}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily void Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root,  }\item[{int}]{indent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisuje wartoœci wszystkich wêz³ów drzewa w kolejnoœci rosn¹cej z uwzglêdnieniem wysokoœci drzewa i kolorów poszczególnych wêz³ów. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+{\em indent} & wciêcie -\/ wyra¿ane w iloœci znaków bia³ych. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a544190e91a8c78ab99b91aab8ec88de8}\label{funkcje_8cpp_a544190e91a8c78ab99b91aab8ec88de8}} 
+\index{funkcje.cpp@{funkcje.cpp}!lookForSign@{lookForSign}}
+\index{lookForSign@{lookForSign}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{lookForSign()}{lookForSign()}}
+{\footnotesize\ttfamily size\+\_\+t look\+For\+Sign (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line,  }\item[{char}]{searched }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajduj¹ca pozycjê podanego znaku w ³añcuchu znakowym. U¿ywana jest w funkcji Read\+From\+File, by usun¹æ z pliku wszystkie komentarze, puste linie ora linie, które zawieraj¹ niepoprawnie wprowadzone komendy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em line} & ³añcuch znakowy. \\
+\hline
+{\em searched} & znak, którego pozycja ma zostaæ odnaleziona. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+pozycjê odnalezionego znaku (je¿eli nie wyst¹pi³ -\/ zwracana jest d³ugoœæ podanego ³añcucha znakowego). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a99ac9a46fd9ef8ae8ce7826705ac0e1b}\label{funkcje_8cpp_a99ac9a46fd9ef8ae8ce7826705ac0e1b}} 
+\index{funkcje.cpp@{funkcje.cpp}!Print@{Print}}
+\index{Print@{Print}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+Funkcja przyjmuj¹ca jako parametr korzeñ drzewa. Wypisuje wartoœci wszystkich wêz³ów drzewa w kolejnoœci in-\/order. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaŸnik na korzeñ drzewa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_aa02b17d7a71b191b2cf05fa3108dec33}\label{funkcje_8cpp_aa02b17d7a71b191b2cf05fa3108dec33}} 
+\index{funkcje.cpp@{funkcje.cpp}!ReadFromFile@{ReadFromFile}}
+\index{ReadFromFile@{ReadFromFile}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadFromFile()}{ReadFromFile()}}
+{\footnotesize\ttfamily void Read\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Funkcja odczytuj¹ca plik \char`\"{}linia po linii\char`\"{} i wykonuj¹ca odpowiednie polecenia. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em file\+\_\+name} & pe³na nazwa pliku. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a935deee15d0c8784672c0111f45cc436}\label{funkcje_8cpp_a935deee15d0c8784672c0111f45cc436}} 
+\index{funkcje.cpp@{funkcje.cpp}!rotate\_left@{rotate\_left}}
+\index{rotate\_left@{rotate\_left}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{rotate\_left()}{rotate\_left()}}
+{\footnotesize\ttfamily void rotate\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{node }\end{DoxyParamCaption})}
+
+
+
+Lokalna zmiana struktury poddrzewa (w lewo). 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaŸnik na wêze³ drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{OstrzeÅ¼enie}
+prawe poddrzewo wêz³a musi istnieæ! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{funkcje_8cpp_a73dacdad4ee6a5a9e1edbc2b12f84188}\label{funkcje_8cpp_a73dacdad4ee6a5a9e1edbc2b12f84188}} 
+\index{funkcje.cpp@{funkcje.cpp}!rotate\_right@{rotate\_right}}
+\index{rotate\_right@{rotate\_right}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{rotate\_right()}{rotate\_right()}}
+{\footnotesize\ttfamily void rotate\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{node }\end{DoxyParamCaption})}
+
+
+
+Lokalna zmiana struktury poddrzewa (w lewo). 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaŸnik na wêze³ drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{OstrzeÅ¼enie}
+lewe poddrzewo wêz³a musi istnieæ! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{funkcje_8cpp_a69565a31c2993e51047385e5b48e5b9f}\label{funkcje_8cpp_a69565a31c2993e51047385e5b48e5b9f}} 
+\index{funkcje.cpp@{funkcje.cpp}!StartCase@{StartCase}}
+\index{StartCase@{StartCase}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{StartCase()}{StartCase()}}
+{\footnotesize\ttfamily void Start\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node,  }\item[{bool \&}]{is\+Case2 }\end{DoxyParamCaption})}
+
+
+
+Funkcja obejmuj¹ca przestawienie odpowiednich wskaŸników i dealokowanie odpowiedniej pamiêci -\/ pamiêci wêz³a y. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaŸnik na wêze³ drzewa. \\
+\hline
+{\em is\+Case2} & sprawdzenie, czy istnieje potrzeba dalszego przywracania w³asnoœci drzewa czerwono-\/czarnego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a1dd41152c2e496af89da0adcb96b79b9}\label{funkcje_8cpp_a1dd41152c2e496af89da0adcb96b79b9}} 
+\index{funkcje.cpp@{funkcje.cpp}!Successor@{Successor}}
+\index{Successor@{Successor}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{Successor()}{Successor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Successor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajduj¹ca nastêpcê danego wêz³a. Je¿eli wêze³ zostanie odnaleziony, funkcja zwraca wskaŸnik na niego, w przeciwnym wypadku zwracany jest nullptr. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaŸnik na wêze³ drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+nastêpca wêz³a. 
+\end{DoxyReturn}

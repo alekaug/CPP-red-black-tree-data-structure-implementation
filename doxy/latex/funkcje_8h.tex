@@ -1,0 +1,416 @@
+\hypertarget{funkcje_8h}{}\doxysection{Dokumentacja pliku funkcje.\+h}
+\label{funkcje_8h}\index{funkcje.h@{funkcje.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}struktury.\+h\char`\"{}}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funkcje_8h_a68335f419a3bfc6306be5e1542505aa9}{Add}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const \mbox{\hyperlink{struktury_8h_a634f2e2245ac87de466e2810dee4f841}{T}} \&value)
+\begin{DoxyCompactList}\small\item\em Funkcja dodająca do drzewa węzeł o podanej wartości. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_ab53b037f8e9e13ff5a6c1ac236af62dc}{Add\+\_\+\+Recovery}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$z)
+\begin{DoxyCompactList}\small\item\em Funkcja przywracająca własności drzewa Czerwono-\/\+Czarnego po wykonaniu operacji dodawania nowego węzła do drzewa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a935deee15d0c8784672c0111f45cc436}{rotate\+\_\+left}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&node)
+\begin{DoxyCompactList}\small\item\em Lokalna zmiana struktury poddrzewa (w lewo). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a73dacdad4ee6a5a9e1edbc2b12f84188}{rotate\+\_\+right}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&node)
+\begin{DoxyCompactList}\small\item\em Lokalna zmiana struktury poddrzewa (w lewo). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8h_a5df4178dbb1fa1537884555e8ffeff6e}{Find}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, const \mbox{\hyperlink{struktury_8h_a634f2e2245ac87de466e2810dee4f841}{T}} \&value)
+\begin{DoxyCompactList}\small\item\em Funkcja szukająca w drzewie węzła o podanej wartości. Jeżeli węzeł zostanie odnaleziony funkcja zwraca wskaźnik na niego -\/ w przeciwnym wypadku zwracany jest nullptr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a69565a31c2993e51047385e5b48e5b9f}{Start\+Case}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node, bool \&is\+Case2)
+\begin{DoxyCompactList}\small\item\em Funkcja obejmująca przestawienie odpowiednich wskaźników i dealokowanie odpowiedniej pamięci -\/ pamięci węzła y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8h_a1dd41152c2e496af89da0adcb96b79b9}{Successor}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajdująca następcę danego węzła. Jeżeli węzeł zostanie odnaleziony, funkcja zwraca wskaźnik na niego, w przeciwnym wypadku zwracany jest nullptr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_aa23a826d7a4c8e0e860cb33d7836efef}{Delete}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const \mbox{\hyperlink{struktury_8h_a634f2e2245ac87de466e2810dee4f841}{T}} \&value)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajduje węzeł o podanej wartości, usuwa go i dealokuje zaalokowaną wcześniej pamięć. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8h_a95d91e7901f2f61139a2bcb353afa914}{Get\+Parent}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Funkcja znajdująca i zwracająca rodzica podanego węzła. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{funkcje_8h_a77dae413e9a75fefc0ac6d4fbad993c7}{Get\+Sibling}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Funkcja znajdująca i zwracająca rodzeństwo podanego węzła. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a1f59b8a5dd41e123a9d87a9ffc82c871}{Change\+To\+Color}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$node, \mbox{\hyperlink{struktury_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Funkcja zmieniająca kolor węzła na podany. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a54f95d5fd52c294f192d05a547a3f8ed}{Deallocate}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root)
+\begin{DoxyCompactList}\small\item\em Funkcja całkowicie usuwa drzewo i dealokuje zajętą przezeń pamięć. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a6334e6b5ecd24a060fa46fe6be9cbb0f}{Delete\+\_\+\+Recovery}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&node)
+\begin{DoxyCompactList}\small\item\em Funkcja przywracająca własności drzewa czerwono-\/czarnego z widoku usuniętego wcześniej węzła-\/następcy węzła przeznaczonego do usunięcia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a99ac9a46fd9ef8ae8ce7826705ac0e1b}{Print}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Funkcja przyjmująca jako parametr korzeń drzewa. Wypisuje wartości wszystkich węzłów drzewa w kolejności in-\/order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a3a1c6ce27fcc784544dc6fb94b76333e}{Graph}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, int indent=0)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuje wartości wszystkich węzłów drzewa w kolejności rosnącej z uwzględnieniem wysokości drzewa i kolorów poszczególnych węzłów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_aa02b17d7a71b191b2cf05fa3108dec33}{Read\+From\+File}} (const std\+::string \&file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Funkcja odczytująca plik \char`\"{}linia po linii\char`\"{} i wykonująca odpowiednie polecenia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a64c3fe58316f14abfece5c87eee40769}{File\+Print}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const std\+::string \&file\+\_\+name, const bool \&to\+Overwrite)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca do pliku o podanej nazwie wartości wszystich węzłów drzewa w porządku rosnącym. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a4a8f930f7a7a68615bbd8926172af1f0}{File\+Graph}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&root, const std\+::string \&file\+\_\+name, const bool \&to\+Overwrite)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca do pliku o podanej nazwie wizualizację wszystkich węzłów znajdujących się w drzewie, z uwzględnieniem ich koloru, np\+: \mbox{[}33\mbox{]} -\/ węzeł czarny o wartości 33, (13) -\/ węzeł czerwony o wartości 13. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_ab93c9772c981762cd502262e917743c7}{Print\+To\+File}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, std\+::ofstream \&file)
+\begin{DoxyCompactList}\small\item\em Główny algorytm służący wypisywaniu do pliku wszystkich wartości węzłów drzewa w kolejności rosnącej. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_ae46361afeb9863c199d30aff5b527811}{Graph\+To\+File}} (\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$root, std\+::ofstream \&file, int indent=0)
+\begin{DoxyCompactList}\small\item\em Główny algorytm służący wypisywaniu do pliku wizualizacji pozycji wszystkich węzłów w drzewie czerwono-\/czarnym. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{funkcje_8h_a544190e91a8c78ab99b91aab8ec88de8}{look\+For\+Sign}} (const std\+::string \&line, char searched)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajdująca pozycję podanego znaku w łańcuchu znakowym. Używana jest w funkcji Read\+From\+File, by usunąć z pliku wszystkie komentarze, puste linie ora linie, które zawierają niepoprawnie wprowadzone komendy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{funkcje_8h_a68335f419a3bfc6306be5e1542505aa9}\label{funkcje_8h_a68335f419a3bfc6306be5e1542505aa9}} 
+\index{funkcje.h@{funkcje.h}!Add@{Add}}
+\index{Add@{Add}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const \mbox{\hyperlink{struktury_8h_a634f2e2245ac87de466e2810dee4f841}{T}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodająca do drzewa węzeł o podanej wartości. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em T} & wartość. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_ab53b037f8e9e13ff5a6c1ac236af62dc}\label{funkcje_8h_ab53b037f8e9e13ff5a6c1ac236af62dc}} 
+\index{funkcje.h@{funkcje.h}!Add\_Recovery@{Add\_Recovery}}
+\index{Add\_Recovery@{Add\_Recovery}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Add\_Recovery()}{Add\_Recovery()}}
+{\footnotesize\ttfamily void Add\+\_\+\+Recovery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{z }\end{DoxyParamCaption})}
+
+
+
+Funkcja przywracająca własności drzewa Czerwono-\/\+Czarnego po wykonaniu operacji dodawania nowego węzła do drzewa. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em z} & wskaźnik na węzeł drzewa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a1f59b8a5dd41e123a9d87a9ffc82c871}\label{funkcje_8h_a1f59b8a5dd41e123a9d87a9ffc82c871}} 
+\index{funkcje.h@{funkcje.h}!ChangeToColor@{ChangeToColor}}
+\index{ChangeToColor@{ChangeToColor}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{ChangeToColor()}{ChangeToColor()}}
+{\footnotesize\ttfamily void Change\+To\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node,  }\item[{\mbox{\hyperlink{struktury_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}}]{color }\end{DoxyParamCaption})}
+
+
+
+Funkcja zmieniająca kolor węzła na podany. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaźnik na węzeł drzewa, którego kolor będzie zmieniony. \\
+\hline
+{\em color} & kolor, na jaki węzeł powinien być zmieniony (o ile węzeł istnieje). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a54f95d5fd52c294f192d05a547a3f8ed}\label{funkcje_8h_a54f95d5fd52c294f192d05a547a3f8ed}} 
+\index{funkcje.h@{funkcje.h}!Deallocate@{Deallocate}}
+\index{Deallocate@{Deallocate}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Deallocate()}{Deallocate()}}
+{\footnotesize\ttfamily void Deallocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root }\end{DoxyParamCaption})}
+
+
+
+Funkcja całkowicie usuwa drzewo i dealokuje zajętą przezeń pamięć. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_aa23a826d7a4c8e0e860cb33d7836efef}\label{funkcje_8h_aa23a826d7a4c8e0e860cb33d7836efef}} 
+\index{funkcje.h@{funkcje.h}!Delete@{Delete}}
+\index{Delete@{Delete}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const \mbox{\hyperlink{struktury_8h_a634f2e2245ac87de466e2810dee4f841}{T}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajduje węzeł o podanej wartości, usuwa go i dealokuje zaalokowaną wcześniej pamięć. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em value} & wartość węzła do usunięcia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a6334e6b5ecd24a060fa46fe6be9cbb0f}\label{funkcje_8h_a6334e6b5ecd24a060fa46fe6be9cbb0f}} 
+\index{funkcje.h@{funkcje.h}!Delete\_Recovery@{Delete\_Recovery}}
+\index{Delete\_Recovery@{Delete\_Recovery}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Delete\_Recovery()}{Delete\_Recovery()}}
+{\footnotesize\ttfamily void Delete\+\_\+\+Recovery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja przywracająca własności drzewa czerwono-\/czarnego z widoku usuniętego wcześniej węzła-\/następcy węzła przeznaczonego do usunięcia. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & węzeł drzewa czerwono-\/czarnego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a4a8f930f7a7a68615bbd8926172af1f0}\label{funkcje_8h_a4a8f930f7a7a68615bbd8926172af1f0}} 
+\index{funkcje.h@{funkcje.h}!FileGraph@{FileGraph}}
+\index{FileGraph@{FileGraph}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{FileGraph()}{FileGraph()}}
+{\footnotesize\ttfamily void File\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const std\+::string \&}]{file\+\_\+name,  }\item[{const bool \&}]{to\+Overwrite }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca do pliku o podanej nazwie wizualizację wszystkich węzłów znajdujących się w drzewie, z uwzględnieniem ich koloru, np\+: \mbox{[}33\mbox{]} -\/ węzeł czarny o wartości 33, (13) -\/ węzeł czerwony o wartości 13. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em file\+\_\+name} & pełna nazwa pliku, do którego mają być wypisywane wszystkie wartości węzłów drzewa. \\
+\hline
+{\em to\+Overwrite} & parametr określający czy wartości w pliku mają być nadpisane. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a64c3fe58316f14abfece5c87eee40769}\label{funkcje_8h_a64c3fe58316f14abfece5c87eee40769}} 
+\index{funkcje.h@{funkcje.h}!FilePrint@{FilePrint}}
+\index{FilePrint@{FilePrint}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{FilePrint()}{FilePrint()}}
+{\footnotesize\ttfamily void File\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{root,  }\item[{const std\+::string \&}]{file\+\_\+name,  }\item[{const bool \&}]{to\+Overwrite }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca do pliku o podanej nazwie wartości wszystich węzłów drzewa w porządku rosnącym. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em file\+\_\+name} & pełna nazwa pliku, do którego mają być wypisywane wszystkie wartości węzłów drzewa. \\
+\hline
+{\em to\+Overwrite} & parametr określający czy wartości w pliku mają być nadpisane. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a5df4178dbb1fa1537884555e8ffeff6e}\label{funkcje_8h_a5df4178dbb1fa1537884555e8ffeff6e}} 
+\index{funkcje.h@{funkcje.h}!Find@{Find}}
+\index{Find@{Find}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root,  }\item[{const \mbox{\hyperlink{struktury_8h_a634f2e2245ac87de466e2810dee4f841}{T}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcja szukająca w drzewie węzła o podanej wartości. Jeżeli węzeł zostanie odnaleziony funkcja zwraca wskaźnik na niego -\/ w przeciwnym wypadku zwracany jest nullptr. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em value} & wartosc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+węzeł o podanej wartości lub nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a95d91e7901f2f61139a2bcb353afa914}\label{funkcje_8h_a95d91e7901f2f61139a2bcb353afa914}} 
+\index{funkcje.h@{funkcje.h}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Get\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja znajdująca i zwracająca rodzica podanego węzła. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaźnik na odpowiedni węzeł drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+rodzic podanego węzła lub nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a77dae413e9a75fefc0ac6d4fbad993c7}\label{funkcje_8h_a77dae413e9a75fefc0ac6d4fbad993c7}} 
+\index{funkcje.h@{funkcje.h}!GetSibling@{GetSibling}}
+\index{GetSibling@{GetSibling}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{GetSibling()}{GetSibling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Get\+Sibling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja znajdująca i zwracająca rodzeństwo podanego węzła. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaźnik na odpowiedni węzeł drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+rodzeństwo węzła lub nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a3a1c6ce27fcc784544dc6fb94b76333e}\label{funkcje_8h_a3a1c6ce27fcc784544dc6fb94b76333e}} 
+\index{funkcje.h@{funkcje.h}!Graph@{Graph}}
+\index{Graph@{Graph}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily void Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root,  }\item[{int}]{indent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisuje wartości wszystkich węzłów drzewa w kolejności rosnącej z uwzględnieniem wysokości drzewa i kolorów poszczególnych węzłów. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em indent} & wcięcie -\/ wyrażane w ilości znaków białych. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_ae46361afeb9863c199d30aff5b527811}\label{funkcje_8h_ae46361afeb9863c199d30aff5b527811}} 
+\index{funkcje.h@{funkcje.h}!GraphToFile@{GraphToFile}}
+\index{GraphToFile@{GraphToFile}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{GraphToFile()}{GraphToFile()}}
+{\footnotesize\ttfamily void Graph\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root,  }\item[{std\+::ofstream \&}]{file,  }\item[{int}]{indent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Główny algorytm służący wypisywaniu do pliku wizualizacji pozycji wszystkich węzłów w drzewie czerwono-\/czarnym. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em file} & strumień plikowy. \\
+\hline
+{\em indent} & wcięcie -\/ wyrażane w ilości znaków białych. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a544190e91a8c78ab99b91aab8ec88de8}\label{funkcje_8h_a544190e91a8c78ab99b91aab8ec88de8}} 
+\index{funkcje.h@{funkcje.h}!lookForSign@{lookForSign}}
+\index{lookForSign@{lookForSign}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{lookForSign()}{lookForSign()}}
+{\footnotesize\ttfamily size\+\_\+t look\+For\+Sign (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line,  }\item[{char}]{searched }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajdująca pozycję podanego znaku w łańcuchu znakowym. Używana jest w funkcji Read\+From\+File, by usunąć z pliku wszystkie komentarze, puste linie ora linie, które zawierają niepoprawnie wprowadzone komendy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em line} & łańcuch znakowy. \\
+\hline
+{\em searched} & znak, którego pozycja ma zostać odnaleziona. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+pozycję odnalezionego znaku (jeżeli nie wystąpił -\/ zwracana jest długość podanego łańcucha znakowego). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a99ac9a46fd9ef8ae8ce7826705ac0e1b}\label{funkcje_8h_a99ac9a46fd9ef8ae8ce7826705ac0e1b}} 
+\index{funkcje.h@{funkcje.h}!Print@{Print}}
+\index{Print@{Print}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+Funkcja przyjmująca jako parametr korzeń drzewa. Wypisuje wartości wszystkich węzłów drzewa w kolejności in-\/order. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_ab93c9772c981762cd502262e917743c7}\label{funkcje_8h_ab93c9772c981762cd502262e917743c7}} 
+\index{funkcje.h@{funkcje.h}!PrintToFile@{PrintToFile}}
+\index{PrintToFile@{PrintToFile}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{PrintToFile()}{PrintToFile()}}
+{\footnotesize\ttfamily void Print\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{root,  }\item[{std\+::ofstream \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Główny algorytm służący wypisywaniu do pliku wszystkich wartości węzłów drzewa w kolejności rosnącej. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em root} & wskaźnik na korzeń drzewa. \\
+\hline
+{\em file} & strumień plikowy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_aa02b17d7a71b191b2cf05fa3108dec33}\label{funkcje_8h_aa02b17d7a71b191b2cf05fa3108dec33}} 
+\index{funkcje.h@{funkcje.h}!ReadFromFile@{ReadFromFile}}
+\index{ReadFromFile@{ReadFromFile}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{ReadFromFile()}{ReadFromFile()}}
+{\footnotesize\ttfamily void Read\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Funkcja odczytująca plik \char`\"{}linia po linii\char`\"{} i wykonująca odpowiednie polecenia. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em file\+\_\+name} & pełna nazwa pliku. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a935deee15d0c8784672c0111f45cc436}\label{funkcje_8h_a935deee15d0c8784672c0111f45cc436}} 
+\index{funkcje.h@{funkcje.h}!rotate\_left@{rotate\_left}}
+\index{rotate\_left@{rotate\_left}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_left()}{rotate\_left()}}
+{\footnotesize\ttfamily void rotate\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{node }\end{DoxyParamCaption})}
+
+
+
+Lokalna zmiana struktury poddrzewa (w lewo). 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaźnik na węzeł drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Ostrzeżenie}
+prawe poddrzewo węzła musi istnieć! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{funkcje_8h_a73dacdad4ee6a5a9e1edbc2b12f84188}\label{funkcje_8h_a73dacdad4ee6a5a9e1edbc2b12f84188}} 
+\index{funkcje.h@{funkcje.h}!rotate\_right@{rotate\_right}}
+\index{rotate\_right@{rotate\_right}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_right()}{rotate\_right()}}
+{\footnotesize\ttfamily void rotate\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$\&}]{node }\end{DoxyParamCaption})}
+
+
+
+Lokalna zmiana struktury poddrzewa (w lewo). 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaźnik na węzeł drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Ostrzeżenie}
+lewe poddrzewo węzła musi istnieć! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{funkcje_8h_a69565a31c2993e51047385e5b48e5b9f}\label{funkcje_8h_a69565a31c2993e51047385e5b48e5b9f}} 
+\index{funkcje.h@{funkcje.h}!StartCase@{StartCase}}
+\index{StartCase@{StartCase}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{StartCase()}{StartCase()}}
+{\footnotesize\ttfamily void Start\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node,  }\item[{bool \&}]{is\+Case2 }\end{DoxyParamCaption})}
+
+
+
+Funkcja obejmująca przestawienie odpowiednich wskaźników i dealokowanie odpowiedniej pamięci -\/ pamięci węzła y. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaźnik na węzeł drzewa. \\
+\hline
+{\em is\+Case2} & sprawdzenie, czy istnieje potrzeba dalszego przywracania własności drzewa czerwono-\/czarnego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a1dd41152c2e496af89da0adcb96b79b9}\label{funkcje_8h_a1dd41152c2e496af89da0adcb96b79b9}} 
+\index{funkcje.h@{funkcje.h}!Successor@{Successor}}
+\index{Successor@{Successor}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{Successor()}{Successor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tree_node}{Tree\+Node}}$\ast$ Successor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tree_node}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajdująca następcę danego węzła. Jeżeli węzeł zostanie odnaleziony, funkcja zwraca wskaźnik na niego, w przeciwnym wypadku zwracany jest nullptr. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em node} & wskaźnik na węzeł drzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+następca węzła. 
+\end{DoxyReturn}

@@ -1,0 +1,71 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1}Indeks klas}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lista klas}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks plików}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista plików}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Dokumentacja klas}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dokumentacja struktury Tree\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Node}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Opis szczegółowy}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Dokumentacja atrybutów składowych}{5}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}\_Color}{6}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}left}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}parent}{6}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}right}{6}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}value}{6}{subsubsection.3.1.2.5}%
+\contentsline {chapter}{\numberline {4}Dokumentacja plików}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dokumentacja pliku funkcje.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Dokumentacja funkcji}{8}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Add()}{8}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}Add\_Recovery()}{8}{subsubsection.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.1.3}ChangeToColor()}{10}{subsubsection.4.1.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.1.4}Deallocate()}{10}{subsubsection.4.1.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.1.5}Delete()}{10}{subsubsection.4.1.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.1.6}Delete\_Recovery()}{11}{subsubsection.4.1.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.1.7}FileGraph()}{11}{subsubsection.4.1.1.7}%
+\contentsline {subsubsection}{\numberline {4.1.1.8}FilePrint()}{11}{subsubsection.4.1.1.8}%
+\contentsline {subsubsection}{\numberline {4.1.1.9}Find()}{12}{subsubsection.4.1.1.9}%
+\contentsline {subsubsection}{\numberline {4.1.1.10}GetParent()}{12}{subsubsection.4.1.1.10}%
+\contentsline {subsubsection}{\numberline {4.1.1.11}GetSibling()}{12}{subsubsection.4.1.1.11}%
+\contentsline {subsubsection}{\numberline {4.1.1.12}Graph()}{13}{subsubsection.4.1.1.12}%
+\contentsline {subsubsection}{\numberline {4.1.1.13}GraphToFile()}{13}{subsubsection.4.1.1.13}%
+\contentsline {subsubsection}{\numberline {4.1.1.14}lookForSign()}{13}{subsubsection.4.1.1.14}%
+\contentsline {subsubsection}{\numberline {4.1.1.15}Print()}{14}{subsubsection.4.1.1.15}%
+\contentsline {subsubsection}{\numberline {4.1.1.16}PrintToFile()}{14}{subsubsection.4.1.1.16}%
+\contentsline {subsubsection}{\numberline {4.1.1.17}ReadFromFile()}{14}{subsubsection.4.1.1.17}%
+\contentsline {subsubsection}{\numberline {4.1.1.18}rotate\_left()}{14}{subsubsection.4.1.1.18}%
+\contentsline {subsubsection}{\numberline {4.1.1.19}rotate\_right()}{15}{subsubsection.4.1.1.19}%
+\contentsline {subsubsection}{\numberline {4.1.1.20}StartCase()}{15}{subsubsection.4.1.1.20}%
+\contentsline {subsubsection}{\numberline {4.1.1.21}Successor()}{15}{subsubsection.4.1.1.21}%
+\contentsline {section}{\numberline {4.2}Dokumentacja pliku funkcje.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Dokumentacja funkcji}{17}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Add()}{17}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Add\_Recovery()}{17}{subsubsection.4.2.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.3}ChangeToColor()}{18}{subsubsection.4.2.1.3}%
+\contentsline {subsubsection}{\numberline {4.2.1.4}Deallocate()}{18}{subsubsection.4.2.1.4}%
+\contentsline {subsubsection}{\numberline {4.2.1.5}Delete()}{18}{subsubsection.4.2.1.5}%
+\contentsline {subsubsection}{\numberline {4.2.1.6}Delete\_Recovery()}{19}{subsubsection.4.2.1.6}%
+\contentsline {subsubsection}{\numberline {4.2.1.7}FileGraph()}{19}{subsubsection.4.2.1.7}%
+\contentsline {subsubsection}{\numberline {4.2.1.8}FilePrint()}{19}{subsubsection.4.2.1.8}%
+\contentsline {subsubsection}{\numberline {4.2.1.9}Find()}{20}{subsubsection.4.2.1.9}%
+\contentsline {subsubsection}{\numberline {4.2.1.10}GetParent()}{20}{subsubsection.4.2.1.10}%
+\contentsline {subsubsection}{\numberline {4.2.1.11}GetSibling()}{20}{subsubsection.4.2.1.11}%
+\contentsline {subsubsection}{\numberline {4.2.1.12}Graph()}{21}{subsubsection.4.2.1.12}%
+\contentsline {subsubsection}{\numberline {4.2.1.13}GraphToFile()}{21}{subsubsection.4.2.1.13}%
+\contentsline {subsubsection}{\numberline {4.2.1.14}lookForSign()}{21}{subsubsection.4.2.1.14}%
+\contentsline {subsubsection}{\numberline {4.2.1.15}Print()}{22}{subsubsection.4.2.1.15}%
+\contentsline {subsubsection}{\numberline {4.2.1.16}PrintToFile()}{22}{subsubsection.4.2.1.16}%
+\contentsline {subsubsection}{\numberline {4.2.1.17}ReadFromFile()}{22}{subsubsection.4.2.1.17}%
+\contentsline {subsubsection}{\numberline {4.2.1.18}rotate\_left()}{23}{subsubsection.4.2.1.18}%
+\contentsline {subsubsection}{\numberline {4.2.1.19}rotate\_right()}{23}{subsubsection.4.2.1.19}%
+\contentsline {subsubsection}{\numberline {4.2.1.20}StartCase()}{23}{subsubsection.4.2.1.20}%
+\contentsline {subsubsection}{\numberline {4.2.1.21}Successor()}{24}{subsubsection.4.2.1.21}%
+\contentsline {section}{\numberline {4.3}Dokumentacja pliku main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{24}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Dokumentacja funkcji}{24}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}main()}{24}{subsubsection.4.3.1.1}%
+\contentsline {section}{\numberline {4.4}Dokumentacja pliku struktury.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{25}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Dokumentacja definicji typów}{25}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}T}{25}{subsubsection.4.4.1.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dokumentacja typów wyliczanych}{25}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Color}{25}{subsubsection.4.4.2.1}%
+\contentsline {chapter}{Indeks}{27}{section*.8}%

@@ -1,0 +1,65 @@
+\hypertarget{mem-leak-detect_8h}{}\doxysection{Dokumentacja pliku mem-\/leak-\/detect.h}
+\label{mem-leak-detect_8h}\index{mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}}
+{\ttfamily \#include \char`\"{}mem-\/leak-\/config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+\doxysubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mem-leak-detect_8h_ae506a7a05c7311380f9160324fa2c047}{D\+E\+B\+U\+G\+\_\+\+N\+EW}}~\mbox{\hyperlink{mem-leak-detect_8h_a1ac41480eb2e4aadd52252ee550b630a}{new}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{mem-leak-detect_8h_a1ac41480eb2e4aadd52252ee550b630a}{new}}~\mbox{\hyperlink{mem-leak-detect_8h_ae506a7a05c7311380f9160324fa2c047}{D\+E\+B\+U\+G\+\_\+\+N\+EW}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{mem-leak-detect_8h_a8dc504d20974acdd1ce1645a39b52d3a}{operator new}} (size\+\_\+t size, const char $\ast$file, uint32\+\_\+t line)
+\item 
+void $\ast$ \mbox{\hyperlink{mem-leak-detect_8h_a34b8f08f861358eb9ec00f92377d2ef6}{operator new\mbox{[}$\,$\mbox{]}}} (size\+\_\+t size, const char $\ast$file, uint32\+\_\+t line)
+\item 
+void \mbox{\hyperlink{mem-leak-detect_8h_a3d97a7e2a0208075b4b37328c96ed390}{operator delete}} (void $\ast$ptr)
+\item 
+void \mbox{\hyperlink{mem-leak-detect_8h_a1d8b2d6f17242ae0d182b0f7a98ba54f}{operator delete\mbox{[}$\,$\mbox{]}}} (void $\ast$ptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja definicji}
+\mbox{\Hypertarget{mem-leak-detect_8h_ae506a7a05c7311380f9160324fa2c047}\label{mem-leak-detect_8h_ae506a7a05c7311380f9160324fa2c047}} 
+\index{mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}!DEBUG\_NEW@{DEBUG\_NEW}}
+\index{DEBUG\_NEW@{DEBUG\_NEW}!mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_NEW}{DEBUG\_NEW}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+N\+EW~\mbox{\hyperlink{mem-leak-detect_8h_a1ac41480eb2e4aadd52252ee550b630a}{new}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{mem-leak-detect_8h_a1ac41480eb2e4aadd52252ee550b630a}\label{mem-leak-detect_8h_a1ac41480eb2e4aadd52252ee550b630a}} 
+\index{mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}!new@{new}}
+\index{new@{new}!mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}}
+\doxysubsubsection{\texorpdfstring{new}{new}}
+{\footnotesize\ttfamily \#define new~\mbox{\hyperlink{mem-leak-detect_8h_ae506a7a05c7311380f9160324fa2c047}{D\+E\+B\+U\+G\+\_\+\+N\+EW}}}
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{mem-leak-detect_8h_a3d97a7e2a0208075b4b37328c96ed390}\label{mem-leak-detect_8h_a3d97a7e2a0208075b4b37328c96ed390}} 
+\index{mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}}
+\doxysubsubsection{\texorpdfstring{operator delete()}{operator delete()}}
+{\footnotesize\ttfamily void operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mem-leak-detect_8h_a1d8b2d6f17242ae0d182b0f7a98ba54f}\label{mem-leak-detect_8h_a1d8b2d6f17242ae0d182b0f7a98ba54f}} 
+\index{mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}!operator delete\mbox{[}\mbox{]}@{operator delete[]}}
+\index{operator delete\mbox{[}\mbox{]}@{operator delete[]}!mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}}
+\doxysubsubsection{\texorpdfstring{operator delete[]()}{operator delete[]()}}
+{\footnotesize\ttfamily void operator delete\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mem-leak-detect_8h_a8dc504d20974acdd1ce1645a39b52d3a}\label{mem-leak-detect_8h_a8dc504d20974acdd1ce1645a39b52d3a}} 
+\index{mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}!operator new@{operator new}}
+\index{operator new@{operator new}!mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}}
+\doxysubsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily void$\ast$ operator \mbox{\hyperlink{mem-leak-detect_8h_a1ac41480eb2e4aadd52252ee550b630a}{new}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{file,  }\item[{uint32\+\_\+t}]{line }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mem-leak-detect_8h_a34b8f08f861358eb9ec00f92377d2ef6}\label{mem-leak-detect_8h_a34b8f08f861358eb9ec00f92377d2ef6}} 
+\index{mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}!operator new\mbox{[}\mbox{]}@{operator new[]}}
+\index{operator new\mbox{[}\mbox{]}@{operator new[]}!mem-\/leak-\/detect.h@{mem-\/leak-\/detect.h}}
+\doxysubsubsection{\texorpdfstring{operator new[]()}{operator new[]()}}
+{\footnotesize\ttfamily void$\ast$ operator \mbox{\hyperlink{mem-leak-detect_8h_a1ac41480eb2e4aadd52252ee550b630a}{new}}\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{file,  }\item[{uint32\+\_\+t}]{line }\end{DoxyParamCaption})}
+
